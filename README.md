@@ -42,6 +42,14 @@ The skill uses progressive disclosure to stay lean. At startup, only the name an
 
 Output is raw HTML/SVG fragments rendered in a sandboxed iframe. No build step, no dependencies.
 
+## Client support
+
+This skill teaches agents *what to generate* — it doesn't include a renderer. The output is HTML/SVG wrapped in a `visualizer` code fence.
+
+If your agent client supports rendering that fence in a sandboxed iframe, visuals appear inline. If not, the output is still valid HTML you can open in a browser.
+
+See `references/client-implementation.md` for a full guide on adding renderer support to an agent client.
+
 ## License
 
 MIT
